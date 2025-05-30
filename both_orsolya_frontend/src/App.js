@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { useContext, useState } from 'react';
 import './App.css';
+import Tablazat from './components/Tablazat';
+import useApiContext from './context/ApiContext';
 
 function App() {
+  const {tema} = useApiContext();
+  const {szavak, setSzavak} = useApiContext();
+  const {getAdat} = useApiContext();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h6>Szótár</h6>
+      <select className='valaszto' onChange={(e) => {
+        if(e.target.value > 0){
+          getAdat(`/szavak/${e.target.value}`, setSzavak)
+        }}}>
+        <option  key="0" value="0">Válassz témát!</option>
+        { tema.map((elem) => (
+          <option  key={elem.id} value={elem.id}>{elem.temanev}</option>
+        ))}
+      </select>
+      <div className='feladatok'>
+        <Tablazat kertElemek={szavak}/>
+      </div>
+      <div>
+        <p>Pontszám: </p>
+      </div>
     </div>
   );
 }

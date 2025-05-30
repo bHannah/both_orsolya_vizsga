@@ -1,0 +1,47 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "vizsga",
+    "collectionId": "1b2455a1-51d7-4184-9bbc-a73ca231350c",
+    "dateExported": "2025-05-30T06:35:39.130Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "224769b2-3a41-44a3-954c-92b41fc0cb54",
+            "colId": "1b2455a1-51d7-4184-9bbc-a73ca231350c",
+            "containerId": "",
+            "name": "getSzavak",
+            "url": "http://localhost:8000/api/szavak",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-05-30T06:33:36.729Z",
+            "modified": "2025-05-30T06:34:14.712Z",
+            "headers": []
+        },
+        {
+            "_id": "ace51694-4667-4b26-aaaa-fb72d997c0b4",
+            "colId": "1b2455a1-51d7-4184-9bbc-a73ca231350c",
+            "containerId": "",
+            "name": "getTema",
+            "url": "http://localhost:8000/api/tema",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-05-30T06:34:26.993Z",
+            "modified": "2025-05-30T06:34:36.459Z",
+            "headers": []
+        },
+        {
+            "_id": "0f7f3a92-4fe4-4368-b2c8-b35542ae8952",
+            "colId": "1b2455a1-51d7-4184-9bbc-a73ca231350c",
+            "containerId": "",
+            "name": "getSzavakTemankent",
+            "url": "http://localhost:8000/api/szavak/2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-05-30T06:35:01.035Z",
+            "modified": "2025-05-30T06:35:16.719Z",
+            "headers": []
+        }
+    ],
+    "ref": "AARc52cPmtZStKTfawFjW_K0xF-0YjFDYppa-nyI9zAw805GT4vU6vBWEL_dKlmf62P97HA9FIVJ18t-ef_aLA"
+}
